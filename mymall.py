@@ -14,7 +14,7 @@ mc.describe()
 
 mc.info()
 
-#x_mc = mc.drop(['Genre','CustomerID'], axis=1)  
+x_mc = mc.drop(['Genre','CustomerID'], axis=1)  
 x_mc
 y_mc = mc['Genre']
 y_mc
