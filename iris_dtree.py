@@ -17,5 +17,5 @@ clf = clf.fit(Xtrain, ytrain)
 clf.fit(Xtrain, ytrain) 
 st.write((tree.plot_tree(clf.fit(Xtrain, ytrain) ))
 
-st.header("Mean accurary is")
+#st.header("Mean accurary is")
 st.write(clf.score(Xtest, ytest))
