@@ -14,9 +14,11 @@ clf = tree.DecisionTreeClassifier()
 clf = clf.fit(Xtrain, ytrain)
 
 
-
+fig = plt.figure(figsize(10, 4)
 clf.fit(Xtrain, ytrain) 
-st.write((tree.plot_tree(clf.fit(Xtrain, ytrain) ))
+tree.plot_tree(clf.fit(Xtrain, ytrain) )
+st.pyplot(fig)
+clf.score(Xtest, ytest)
 
 #st.header("Mean accurary is")
 #st.write(clf.score(Xtest, ytest))
