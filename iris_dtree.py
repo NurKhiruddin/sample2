@@ -3,6 +3,7 @@ from sklearn import tree
 from sklearn.tree import plot_tree
 from sklearn.model_selection import train_test_split
 import seaborn as sns
+import matplotlib.pyplot as plt
 iris = sns.load_dataset('iris')
 
 X_iris = iris.drop('species', axis=1)  
