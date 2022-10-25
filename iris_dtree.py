@@ -23,7 +23,7 @@ clf.fit(Xtrain, ytrain)
 tree.plot_tree(clf.fit(Xtrain, ytrain) )
 st.pyplot(fig)
 clf.score(Xtest, ytest)
-st.write('Classifier score : {:.2f}'
+st.write('Classifier score : {:.6f}'
      .format(clf.score(Xtest, ytest)))
 
 
