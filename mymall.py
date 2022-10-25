@@ -14,7 +14,7 @@ mc.describe()
 
 mc.info()
 
-x_mc = mc.drop(['Genre', 'CustomerID'],axis=1) 
+x_mc = mc.drop(['Genre','CustomerID'], axis=1) 
 x_mc
 y_mc = mc['Genre']
 y_mc
@@ -24,8 +24,8 @@ Xtrain, Xtest, ytrain, ytest = train_test_split(x_mc, y_mc)
 Xtrain.head()
 
 from sklearn.naive_bayes import GaussianNB
-model = GaussianNB()                       
-model.fit(Xtrain, ytrain)                 
+model = GaussianNB()                       
+model.fit(Xtrain, ytrain)                 
 y_model = model.predict(Xtest)
 
 from sklearn.metrics import accuracy_score
@@ -33,7 +33,7 @@ a = accuracy_score(ytest, y_model)
 
 st.write(a)
 
-from sklearn.metrics import confusion_matrix 
+from sklearn.metrics import confusion_matrix
 confusion_matrix(ytest, y_model)
 
 import matplotlib.pyplot as plt
